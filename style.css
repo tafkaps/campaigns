@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #52ab98;
+}
+
+.container {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 21px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: light;
+    color: #777;
+}
+
+input {
+    border-radius: 21px;
+    height: 42px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #52ab98;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove the default calendar icon in Chrome, Edge, and Safari */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* Remove the default calendar icon in Firefox */
+input[type="datetime-local"] {
+    -moz-appearance: textfield;
+}
+
+button {
+    border-radius: 21px;
+    height: 42px;
+    margin: 20px 0 0px 0;
+    background-color: #fff;
+    color: #52ab98;
+    border: 1px solid #52ab98;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.1s;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #52ab98;
+    color: #fff;
+}
+
+.result {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 1px 15px 15px 15px;
+    border-radius: 21px;
+    color: #333;
+    font-size: 16px;
+    display: none;
+    /* Ausgeblendet, bis Daten vorhanden sind */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.json-block {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #fff;
+    background-color: #333;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 1);
+}
+
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+    /* Zeilenumbruch, falls nötig */
+    word-wrap: break-word;
+}

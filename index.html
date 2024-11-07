@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwa Campaigns | Contacts Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <label for="start">Start</label>
+            <input type="datetime-local" id="start" value="2024-10-23T11:43">
+            <label for="end">End</label>
+            <input type="datetime-local" id="end" value="2024-10-23T18:57">
+            <button onclick="calculateMinutes()">CALCULATE</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <script>
+        // Ensure the picker opens when the input is focused
+        document.getElementById("start").addEventListener("focus", function() {
+            this.showPicker(); // This will trigger the picker on input focus
+        });
+
+        document.getElementById("end").addEventListener("focus", function() {
+            this.showPicker(); // This will trigger the picker on input focus
+        });
+    </script>
+</body>
+</html>
