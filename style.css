@@ -103,6 +103,7 @@ td {
 }
 
 .json-block {
+    display: none;
     font-size: 12px;
     margin-top: 20px;
     color: #f5f5f5;
